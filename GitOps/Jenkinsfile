@@ -19,7 +19,7 @@ pipeline {
         stage('Git: Code Checkout') {
             steps {
                 script{
-                    code_checkout("https://github.com/DevMadhup/Wanderlust-Mega-Project.git","main")
+                    code_checkout("https://github.com/ronaks9065/fullstack-app-devops.git","master")
                 }
             }
         }
@@ -68,7 +68,7 @@ pipeline {
                         git commit -m "Updated environment variables"
                         
                         echo "Pushing changes to github: "
-                        git push https://github.com/DevMadhup/Wanderlust-Mega-Project.git main
+                        git push https://github.com/ronaks9065/fullstack-app-devops.git master
                     '''
                     }
                 }
@@ -96,7 +96,7 @@ pipeline {
                     </body>
                     </html>
             """,
-            to: '8007930568pandey@gmail.com',
+            to: 'ronaks1907@gmail.com',
             mimeType: 'text/html'
             }
         }

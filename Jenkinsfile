@@ -24,7 +24,7 @@ pipeline {
         stage('Git: Code Checkout') {
             steps {
                 script{
-                    code_checkout("https://github.com/DevMadhup/Wanderlust-Mega-Project.git","main")
+                    code_checkout("https://github.com/ronaks9065/fullstack-app-devops.git","master")
                 }
             }
         }
